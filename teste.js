@@ -24,8 +24,8 @@ if (num2 % 2 != 0) {
 }
 */
 
-
-
+// 
+/*const prompt = require('prompt-sync')();
 
 let consumoPorRefeicao = parseFloat(prompt("Digite a quantidade de ração consumida pelo cachorro por refeição (em gramas): "));
 let pacoteRacaoKg = parseFloat(prompt("Digite o peso do pacote de ração (em kg): "));
@@ -37,5 +37,19 @@ let pacoteRacaoGramas = pacoteRacaoKg * 1000;
 let numRefeicoes = Math.floor(pacoteRacaoGramas / consumoPorRefeicao);
 
 console.log(`Com o pacote de ${pacoteRacaoKg} kg de ração, é possível servir ${numRefeicoes} refeições.`);
+*/
+const prompt = require('prompt-sync')();
 
+for(let i = 0; i <= 3; i++){
+  let num = Math.floor(Math.random() * 6 ) + 1;
+  let num2 = parseFloat(prompt("Digite um numero: "));
+  if(num2 == num){
+    console.log("Palpite Acertado!");
+    console.log("O palpite era: ", num);
+    continue;
+  } else {
+    console.log("Errou, tente novamente!");
+    console.log("O palpite era: ", num);
+  }
+}
 
