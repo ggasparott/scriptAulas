@@ -1,5 +1,7 @@
 
-/*const numeros = [];
+// D
+const prompt = require('prompt-sync')();
+const numeros = [];
 for (let i = 0; i < 25; i++) {
 
   let num = Math.floor(Math.random() * 10 ) + 1;
@@ -22,10 +24,10 @@ num2 = Number(num2);
 if (num2 % 2 != 0) {
   console.log("Impar");
 }
-*/
 
-// 
-/*const prompt = require('prompt-sync')();
+
+// E 
+const prompt = require('prompt-sync')();
 
 let consumoPorRefeicao = parseFloat(prompt("Digite a quantidade de ração consumida pelo cachorro por refeição (em gramas): "));
 let pacoteRacaoKg = parseFloat(prompt("Digite o peso do pacote de ração (em kg): "));
@@ -37,7 +39,9 @@ let pacoteRacaoGramas = pacoteRacaoKg * 1000;
 let numRefeicoes = Math.floor(pacoteRacaoGramas / consumoPorRefeicao);
 
 console.log(`Com o pacote de ${pacoteRacaoKg} kg de ração, é possível servir ${numRefeicoes} refeições.`);
-*/
+
+
+// F
 const prompt = require('prompt-sync')();
 
 for(let i = 0; i <= 3; i++){
